@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-family-opensan:"Open Sans", sans-serif;
+
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+}
+.container{
+    max-width: 1320px;
+    margin: auto; 
+    position: relative;
+}
+/* =============== */
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+
+/* =========================== */
+.row{
+    margin:0px -13px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-2 {
+    width: calc(100% / 2);
+    padding:0px 11px;
+}
+.column-3 {
+    width: calc(100% / 3);
+    /* padding:0px 13px; */
+}
+.column-4{
+    width: calc(100% / 4);
+    padding:0 13px;
+}
+.column-5{
+    width: calc(100% / 5);
+    padding:0 13px;
+}
+
+/* ============================ */
+.mr-8{
+    margin-right:8px;
+}
+.mb-26{
+    margin-bottom: 20px;
+}
+.mt-26{
+    margin-top: 26px;
+}
+
+.ml-13{
+    margin-left: 13px;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* === đổ màu tag: sale hot==== */
+.cart-ribbon{
+    position: absolute;
+    color: rgba(255, 255, 255, 1);
+    width: 52px;
+    height: 24px;
+    top: 22px;
+    left: 0px;
+    font-family: var(--font-family-opensan);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 23.34px;
+    text-align: center;
+}
+
+.sale{
+    background-color: rgba(30, 40, 50, 1); ;
+}
+
+.hot{
+    background-color: rgba(255, 111, 97, 1);
+
+}
+
+
+/* action product*/
+.product-inner {
+    position: relative;
+}
+.action{
+    position: absolute;
+    top: 72%;
+    left: 0;
+    height: 55px;
+    width: 100%;
+    background-color: rgba(30, 40, 50, 1);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 99;
+    display: none;
+}
+.action div i,.action div a {
+    color: white;
+}
+.action .action_search i{
+    margin-right: 20px;
+}
+.action .action_addcart a i{
+    padding-right: 10px;
+}
+.product-inner :hover .action{
+    display: flex;
+}
+/* action_hotcategory*/
+.action_hotcategory{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    height: 55px;
+    width: calc(100% - 26px);
+    background-color: rgba(30, 40, 50, 1);
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 13px;
+    padding: 0 20px;
+    z-index: 99;
+    display: none;
+}
+.action_hotcategory p{
+    color: white;
+}
+.product-inner :hover .action_hotcategory {
+    display: flex;
+}
+/* button bg hover */
+
